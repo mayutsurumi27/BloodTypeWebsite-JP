@@ -1,3 +1,4 @@
+/* พื้นฐานของหน้าเว็บ */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #fce4ec; /* สีชมพูอ่อนๆ น่ารัก */
@@ -19,12 +20,21 @@ body {
     width: 90%;
 }
 
+/* หัวข้อ */
 h1 {
     color: #e91e63; /* สีชมพูเข้ม */
     font-size: 2.5em;
     margin-bottom: 30px;
 }
 
+.page-title {
+    font-size: 3em;
+    color: #4a148c; /* สีม่วงเข้ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* หน้าแรก: ปุ่มเลือกกรุ๊ปเลือด */
 .blood-group-selection {
     display: flex;
     flex-wrap: wrap;
@@ -71,93 +81,23 @@ h1 {
     }
 }
 
+/* หน้าข้อมูลกรุ๊ปเลือด */
+.a-type-bg { background-color: #ffebee; }
+.b-type-bg { background-color: #e0f7fa; }
+.ab-type-bg { background-color: #f1f8e9; }
+.o-type-bg { background-color: #fff3e0; }
+
 .content-card {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     gap: 40px;
     margin-top: 20px;
     text-align: left;
-}
-
-.character-image {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.content-text {
-    flex: 1;
-}
-
-h2 {
-    color: #e91e63;
-    border-bottom: 2px solid #f8bbd0;
-    padding-bottom: 5px;
-    margin-top: 0;
-}
-
-ul {
-    list-style-type: '🌸'; /* ใช้สัญลักษณ์ดอกไม้แทนจุด */
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-.back-button {
-    display: inline-block;
-    background-color: #e91e63;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    margin-top: 30px;
-    transition: background-color 0.3s ease;
-}
-
-.back-button:hover {
-    background-color: #d81b60;
-}
-
-/* สีพื้นหลังสำหรับแต่ละกรุ๊ปเลือด */
-.a-type-bg {
-    background-color: #ffebee; /* ชมพูอ่อน */
-}
-
-.b-type-bg {
-    background-color: #e0f7fa; /* ฟ้าอ่อน */
-}
-
-.ab-type-bg {
-    background-color: #f1f8e9; /* เขียวอ่อน */
-}
-
-.o-type-bg {
-    background-color: #fff3e0; /* ส้มอ่อน */
-}
-
-/* ปรับปรุงการ์ดข้อมูล */
-.content-card {
-    display: flex;
-    flex-wrap: wrap; /* ทำให้จัดเรียงได้ในจอเล็ก */
-    align-items: flex-start;
-    gap: 40px;
-    margin-top: 20px;
-    text-align: left;
-    background-color: rgba(255, 255, 255, 0.8); /* พื้นหลังโปร่งแสง */
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.page-title {
-    font-size: 3em;
-    color: #4a148c; /* สีม่วงเข้ม */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
 }
 
 .character-image {
@@ -170,7 +110,7 @@ li {
 }
 
 .character-image:hover {
-    transform: scale(1.05); /* เอฟเฟกต์ซูมเล็กน้อยเมื่อชี้เมาส์ */
+    transform: scale(1.05);
 }
 
 .content-text {
@@ -181,9 +121,16 @@ li {
     margin-bottom: 20px;
 }
 
+h2 {
+    color: #e91e63;
+    border-bottom: 2px solid #f8bbd0;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
 .info-section h2 {
-    color: #d81b60; /* ชมพูเข้ม */
-    border-bottom: 2px dashed #f48fb1; /* เส้นประ */
+    color: #d81b60;
+    border-bottom: 2px dashed #f48fb1;
     padding-bottom: 5px;
     margin-top: 0;
     font-size: 1.5em;
@@ -193,9 +140,19 @@ li {
     line-height: 1.8;
 }
 
+ul {
+    list-style-type: '🌸';
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* ปุ่มและลิงก์ */
 .back-button {
     display: inline-block;
-    background: linear-gradient(45deg, #e91e63, #ff4081); /* Gradient background */
+    background: linear-gradient(45deg, #e91e63, #ff4081);
     color: white;
     padding: 12px 25px;
     border-radius: 30px;
@@ -209,9 +166,9 @@ li {
 .back-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-
 }
 
+/* หน้าสถิติ */
 .stats-bg {
     background-color: #f1f8e9; /* สีเขียวอ่อนน่ารักสำหรับหน้าสถิติ */
 }
