@@ -209,4 +209,84 @@ li {
 .back-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.stats-bg {
+    background-color: #f1f8e9; /* สีเขียวอ่อนน่ารักสำหรับหน้าสถิติ */
+}
+
+.intro-text {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.stats-section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+    color: #4a148c;
+    font-size: 2em;
+    border-bottom: 3px solid #ce93d8;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.blood-stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.blood-stats-table th, .blood-stats-table td {
+    border: 1px solid #e0f2f1;
+    padding: 12px;
+    text-align: center;
+}
+
+.blood-stats-table th {
+    background-color: #ce93d8;
+    color: white;
+    font-weight: bold;
+}
+
+.blood-stats-table tr:nth-child(even) {
+    background-color: #f3e5f5;
+}
+
+.pie-chart-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.pie-chart-image:hover {
+    transform: scale(1.05) rotate(5deg);
+}
+
+.stats-button {
+    display: inline-block;
+    background: linear-gradient(45deg, #a4508b, #5f0a87);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+}
+
+.stats-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
