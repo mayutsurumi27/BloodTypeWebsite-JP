@@ -1,0 +1,212 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fce4ec; /* สีชมพูอ่อนๆ น่ารัก */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 90%;
+}
+
+h1 {
+    color: #e91e63; /* สีชมพูเข้ม */
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.blood-group-selection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.blood-group-link {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.blood-group-card {
+    background-color: #f8bbd0; /* สีพื้นหลังการ์ด */
+    border-radius: 15px;
+    padding: 20px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blood-group-link:hover .blood-group-card {
+    transform: translateY(-10px) scale(1.05); /* เอฟเฟกต์เด้งขึ้นและขยาย */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blood-group-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+    animation: bounce 2s infinite; /* แอนิเมชันขยับขึ้นลง */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.content-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.character-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-text {
+    flex: 1;
+}
+
+h2 {
+    color: #e91e63;
+    border-bottom: 2px solid #f8bbd0;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: '🌸'; /* ใช้สัญลักษณ์ดอกไม้แทนจุด */
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #e91e63;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #d81b60;
+}
+
+/* สีพื้นหลังสำหรับแต่ละกรุ๊ปเลือด */
+.a-type-bg {
+    background-color: #ffebee; /* ชมพูอ่อน */
+}
+
+.b-type-bg {
+    background-color: #e0f7fa; /* ฟ้าอ่อน */
+}
+
+.ab-type-bg {
+    background-color: #f1f8e9; /* เขียวอ่อน */
+}
+
+.o-type-bg {
+    background-color: #fff3e0; /* ส้มอ่อน */
+}
+
+/* ปรับปรุงการ์ดข้อมูล */
+.content-card {
+    display: flex;
+    flex-wrap: wrap; /* ทำให้จัดเรียงได้ในจอเล็ก */
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 20px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.8); /* พื้นหลังโปร่งแสง */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+    font-size: 3em;
+    color: #4a148c; /* สีม่วงเข้ม */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.character-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.character-image:hover {
+    transform: scale(1.05); /* เอฟเฟกต์ซูมเล็กน้อยเมื่อชี้เมาส์ */
+}
+
+.content-text {
+    flex: 1;
+}
+
+.info-section {
+    margin-bottom: 20px;
+}
+
+.info-section h2 {
+    color: #d81b60; /* ชมพูเข้ม */
+    border-bottom: 2px dashed #f48fb1; /* เส้นประ */
+    padding-bottom: 5px;
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.info-section p {
+    line-height: 1.8;
+}
+
+.back-button {
+    display: inline-block;
+    background: linear-gradient(45deg, #e91e63, #ff4081); /* Gradient background */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
